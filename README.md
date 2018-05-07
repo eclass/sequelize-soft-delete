@@ -35,8 +35,8 @@ module.exports = (sequelize, DataTypes) => {
       }
     }
   )
-  const options = {deleted: 1}
-  sequelizeSoftDelete(MyModel, options)
+  const options = {field: 'deleted', deleted: 1}
+  sequelizeSoftDelete.softDelete(MyModel, options)
   return MyModel
 }
 
