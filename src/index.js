@@ -26,10 +26,11 @@ class SequelizeSoftDelete {
      * @param {Object} options Options to filter query
      * @return {Number} Total updated
      */
-    const updateDeleted = async function (options) {
+    const updateDeleted = async function (options, config) {
       const docs = await Model.update(
-        { deleted: deletedOptions.deleted },
-        options
+        { [deletedOptions.deleted]: deletedOptions.deleted },
+        options,
+        config
       )
       return docs.length
     }
