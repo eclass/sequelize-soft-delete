@@ -19,7 +19,7 @@ class SequelizeSoftDelete {
    */
   softDelete (Model, options) {
     const defaultOptions = { field: 'deleted', deleted: true }
-    const deletedOptions = { ...options, ...defaultOptions }
+    const deletedOptions = { ...defaultOptions, ...options }
     /**
      * soft delete
      * Set deleted to true
