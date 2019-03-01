@@ -19,7 +19,7 @@ class SequelizeSoftDelete {
    */
   softDelete (Model, options) {
     const defaultOptions = { field: 'deleted', deleted: true }
-    const deletedOptions = { ...options, ...defaultOptions }
+    const deletedOptions = { ...defaultOptions, ...options }
     /**
      * soft delete
      * Set deleted to true
@@ -28,7 +28,7 @@ class SequelizeSoftDelete {
      */
     const updateDeleted = async function (options) {
       const docs = await Model.update(
-        { deleted: deletedOptions.deleted },
+        { [deletedOptions.field]: deletedOptions.deleted },
         options
       )
       return docs.length
