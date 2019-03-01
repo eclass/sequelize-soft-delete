@@ -6,7 +6,6 @@
   "scripts": {
     "lint": "eslint --fix .",
     "format": "prettier-standard 'src/**/*.js'",
-    "precommit": "lint-staged",
     "pretest": "npm run lint -s && npm run format -s",
     "test": "echo 'not test'"
   },
@@ -39,8 +38,8 @@
     "eslint-plugin-promise": "4.0.1",
     "eslint-plugin-security": "1.4.0",
     "eslint-plugin-standard": "4.0.0",
-    "husky": "0.14.3",
-    "lint-staged": "7.1.0",
+    "husky": "1.3.1",
+    "lint-staged": "8.1.4",
     "prettier-standard": "8.0.1"
   },
   "eslintConfig": {
@@ -63,12 +62,19 @@
   "eslintIgnore": [
     "coverage"
   ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
-    "src/**/*.js": [
-      "eslint --fix",
-      "prettier-standard",
-      "git add"
-    ]
+    "linters": {
+      "src/**/*.js": [
+        "eslint --fix",
+        "prettier-standard",
+        "git add"
+      ]
+    }
   },
   "renovate": {
     "automerge": "minor",
