@@ -7,7 +7,8 @@
     "lint": "eslint --fix .",
     "format": "prettier-standard 'src/**/*.js'",
     "pretest": "npm run lint -s && npm run format -s",
-    "test": "echo 'not test'"
+    "test": "echo 'not test'",
+    "commit": "commit"
   },
   "engines": {
     "node": ">=8"
@@ -28,6 +29,9 @@
   "homepage": "https://github.com/eclass/sequelize-soft-delete#readme",
   "dependencies": {},
   "devDependencies": {
+    "@commitlint/cli": "7.5.2",
+    "@commitlint/config-conventional": "7.5.0",
+    "@commitlint/prompt-cli": "7.5.0",
     "eslint": "5.14.1",
     "eslint-config-jsdoc-strict": "2.0.0",
     "eslint-config-prettier": "4.1.0",
@@ -64,7 +68,8 @@
   ],
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "lint-staged": {
@@ -75,6 +80,11 @@
         "git add"
       ]
     }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "renovate": {
     "automerge": "minor",
