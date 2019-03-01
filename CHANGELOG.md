@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/eclass/sequelize-soft-delete/compare/v1.0.1...v1.1.0) (2019-03-01)
+
+
+### Bug Fixes
+
+* **options:** fix override default options and delete field ([9121997](https://github.com/eclass/sequelize-soft-delete/commit/9121997))
+
+
+### Features
+
+* **typescript:** add type definitions ([a9ddc48](https://github.com/eclass/sequelize-soft-delete/commit/a9ddc48))
+
 #### 1.0.1 (2018-05-07)
 
 ##### Documentation Changes
@@ -13,4 +25,3 @@
 ##### Chores
 
 * **project:**  first commit ([2d27e9b4](https://github.com/eclass/sequelize-soft-delete/commit/2d27e9b4631bc71b06a454d1f6a5f456765fdb0f))
-
