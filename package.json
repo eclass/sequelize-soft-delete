@@ -59,7 +59,7 @@
     "npm-github-config": "2.0.0",
     "prettier-standard": "9.1.1",
     "semantic-release": "15.13.12",
-    "tsd-jsdoc": "2.2.0",
+    "tsd-jsdoc": "2.3.0",
     "tslint": "5.16.0",
     "tslint-config-prettier": "1.18.0",
     "tslint-config-standard": "8.0.1",
