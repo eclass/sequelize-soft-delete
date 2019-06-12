@@ -58,7 +58,7 @@
     "lint-staged": "8.2.0",
     "npm-github-config": "2.0.0",
     "prettier-standard": "9.1.1",
-    "semantic-release": "15.13.12",
+    "semantic-release": "15.13.16",
     "tsd-jsdoc": "2.3.0",
     "tslint": "5.17.0",
     "tslint-config-prettier": "1.18.0",
