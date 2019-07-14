@@ -54,7 +54,7 @@
     "eslint-plugin-security": "1.4.0",
     "eslint-plugin-standard": "4.0.0",
     "husky": "2.7.0",
-    "jsdoc": "3.6.2",
+    "jsdoc": "3.6.3",
     "lint-staged": "8.2.1",
     "npm-github-config": "2.0.0",
     "prettier-standard": "9.1.1",
