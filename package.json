@@ -57,7 +57,7 @@
     "jsdoc": "3.6.3",
     "lint-staged": "8.2.1",
     "npm-github-config": "2.0.0",
-    "prettier-standard": "9.1.1",
+    "prettier-standard": "14.1.1",
     "semantic-release": "15.13.24",
     "tsd-jsdoc": "2.4.0",
     "tslint": "5.20.0",
