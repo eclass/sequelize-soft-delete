@@ -45,7 +45,7 @@
     "@types/sequelize": "4.28.9",
     "eslint": "5.16.0",
     "eslint-config-jsdoc-strict": "2.0.0",
-    "eslint-config-prettier": "4.3.0",
+    "eslint-config-prettier": "8.10.0",
     "eslint-config-standard": "12.0.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsdoc": "8.7.0",
